@@ -1,201 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tattoo Temple Houston — Professional tattoo shop in Houston, TX. Multiple artists, custom work, walk-ins welcome.">
-<meta property="og:title" content="Tattoo Temple Houston | Tattoo Shop">
-<meta property="og:description" content="Professional tattoo shop in Houston, TX. Multiple artists, custom work. Walk-ins welcome.">
-<meta property="og:image" content="./img/photo_01.jpg">
-<title>Tattoo Temple Houston | Tattoo Shop</title>
-<link rel="canonical" href="https://bayouwebstudio.com/tattootemplehouston/">
-<script type="application/ld+json">{
-  "@context":"https://schema.org","@type":"TattooParlor",
-  "name":"Tattoo Temple Houston","image":"./img/photo_01.jpg",
-  "address":{"@type":"PostalAddress","addressLocality":"Houston","addressRegion":"TX","addressCountry":"US"},
-  "url":"https://bayouwebstudio.com/tattootemplehouston/",
-  "sameAs":["https://www.instagram.com/tattootemple_houston/"]
-}</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d0d0d;color:#fff}
-nav{position:fixed;top:0;width:100%;background:rgba(13,13,13,.96);padding:16px 24px;z-index:100;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222}
-nav .logo{color:#c9a84c;font-weight:900;font-size:18px;letter-spacing:2px;text-transform:uppercase}
-nav a{color:#ccc;text-decoration:none;font-size:13px;margin-left:24px;opacity:.8;transition:.2s}
-nav a:hover{color:#c9a84c;opacity:1}
-.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),url('./img/photo_01.jpg') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 24px;position:relative}
-.hero-badge{background:#c9a84c;color:#0d0d0d;padding:6px 18px;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;display:inline-block}
-.hero h1{font-size:clamp(40px,7vw,80px);font-weight:900;letter-spacing:-2px;line-height:1;margin-bottom:16px}
-.hero h1 span{color:#c9a84c}
-.hero p{font-size:18px;opacity:.7;margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto}
-.btn{background:#c9a84c;color:#0d0d0d;padding:14px 36px;border-radius:6px;text-decoration:none;font-weight:800;font-size:15px;display:inline-block;transition:.2s;letter-spacing:.5px;text-transform:uppercase}
-.btn:hover{opacity:.85;transform:translateY(-2px)}
-.btn-outline{background:transparent;color:#c9a84c;border:2px solid #c9a84c;padding:12px 32px;border-radius:6px;text-decoration:none;font-weight:700;font-size:14px;display:inline-block;transition:.2s;letter-spacing:.5px;text-transform:uppercase;margin-left:12px}
-.btn-outline:hover{background:#c9a84c;color:#0d0d0d}
-section{padding:80px 24px;max-width:1200px;margin:0 auto}
-.section-title{font-size:32px;font-weight:900;color:#c9a84c;margin-bottom:12px;text-align:center;letter-spacing:-0.5px;text-transform:uppercase}
-.section-sub{text-align:center;color:#888;margin-bottom:48px;font-size:15px}
-.artists-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
-@media(max-width:600px){nav a{display:none}}
-.artist-card{background:#111;border:1px solid #222;border-radius:16px;padding:32px 24px;text-align:center;transition:.3s}
-.artist-card:hover{border-color:#c9a84c;transform:translateY(-4px)}
-.artist-photo{width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid #c9a84c;margin:0 auto 16px;display:block}
-.artist-photo-placeholder{width:100px;height:100px;border-radius:50%;background:#1a1a1a;border:3px solid #333;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:40px}
-.artist-name{font-size:20px;font-weight:800;margin-bottom:10px}
-.style-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:12px}
-.style-tag{background:#1a1a1a;border:1px solid #333;color:#aaa;padding:3px 12px;border-radius:50px;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
-.artist-ig{color:#c9a84c;font-size:13px;text-decoration:none;display:block;margin-bottom:16px;opacity:.8}
-.artist-ig:hover{opacity:1}
-.artist-btn{padding:10px 24px;font-size:13px;margin-top:4px}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.gallery-item img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;transition:.3s}
-.gallery-item img:hover{transform:scale(1.03);opacity:.9}
-.shop-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-@media(max-width:700px){.shop-info-grid{grid-template-columns:1fr}}
-.info-block h3{color:#c9a84c;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
-.info-block p,.info-block li{color:#aaa;line-height:1.9;font-size:15px}
-.info-block ul{list-style:none;padding:0}
-.info-block li::before{content:"→ ";color:#c9a84c}
-.cta-section{text-align:center;padding:80px 24px;background:linear-gradient(135deg,#111 0%,#0d0d0d 100%);border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a}
-.cta-section h2{font-size:40px;font-weight:900;margin-bottom:16px}
-.cta-section p{color:#888;font-size:17px;margin-bottom:36px}
-.map-wrap{border-radius:16px;overflow:hidden;border:1px solid #222;margin-top:32px}
-.map-wrap iframe{width:100%;height:350px;border:0;display:block;filter:grayscale(80%) invert(90%) contrast(90%)}
-.float-btn{position:fixed;bottom:24px;right:24px;background:#c9a84c;color:#0d0d0d;padding:14px 26px;border-radius:50px;text-decoration:none;font-weight:800;font-size:14px;box-shadow:0 4px 24px rgba(201,168,76,.3);z-index:999;transition:.2s;text-transform:uppercase;letter-spacing:.5px}
-.float-btn:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(201,168,76,.4)}
-footer{padding:32px 24px;text-align:center;border-top:1px solid #1a1a1a;color:#444;font-size:13px}
-footer a{color:#c9a84c;text-decoration:none;opacity:.7}
-footer a:hover{opacity:1}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoo Temple Houston - Premium Tattoo & Piercing Studio</title>
+    <meta name="description" content="Tattoo Temple Houston - Premium tattoo and piercing studio featuring geometric tattoos, anime art, and professional body piercing. Located on TC Jester Blvd.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Tattoo Temple Houston - Premium Tattoo & Piercing Studio">
+    <meta property="og:description" content="Tattoo Temple Houston - Premium tattoo and piercing studio featuring geometric tattoos, anime art, and professional body piercing. Located on TC Jester Blvd.">
+    <meta property="og:image" content="https://houstontattootemple.com/images/raul_1.jpg">
+    <meta property="og:url" content="https://houstontattootemple.com">
+    <meta property="og:type" content="business.business">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tattoo Temple Houston - Premium Tattoo & Piercing Studio">
+    <meta name="twitter:description" content="Tattoo Temple Houston - Premium tattoo and piercing studio featuring geometric tattoos, anime art, and professional body piercing. Located on TC Jester Blvd.">
+    <meta name="twitter:image" content="https://houstontattootemple.com/images/raul_1.jpg">
+    
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TattooParlor",
+      "name": "Tattoo Temple Houston",
+      "description": "Premium tattoo and piercing studio featuring geometric tattoos, anime art, and professional body piercing",
+      "url": "https://houstontattootemple.com",
+      "image": "https://houstontattootemple.com/images/raul_1.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3346 E TC Jester Blvd",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77018",
+        "addressCountry": "US"
+      },
+      "openingHours": "Tu-Sa 13:00-17:00",
+      "sameAs": [
+        "https://instagram.com/weschetattoo",
+        "https://instagram.com/sailor.doom.tattoos",
+        "https://instagram.com/krisxmoon",
+        "https://instagram.com/juju.brilliart"
+      ]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-<nav>
-  <div class="logo">Tattoo Temple Houston</div>
-  <div>
-    <a href="#artists">Artists</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#info">Visit Us</a>
-    <a href="#book">Book</a>
-  </div>
-</nav>
-
-<div class="hero">
-  <div>
-    <div class="hero-badge">✓ Walk-ins Welcome</div>
-    <h1>Tattoo Temple<br><span>Houston</span></h1>
-    <p>A collective of talented artists in the heart of Houston, TX. Custom work, every style. Your next tattoo starts here.</p>
-    <a href="#artists" class="btn">Meet Our Artists</a>
-    <a href="https://www.instagram.com/tattootemple_houston/" class="btn-outline" target="_blank">@tattootemple_houston</a>
-  </div>
-</div>
-
-<section id="artists">
-  <h2 class="section-title">Our Artists</h2>
-  <p class="section-sub">Each artist brings their own unique style and vision. Find your perfect match.</p>
-  <div class="artists-grid">
-    
-        <div class="artist-card">
-          <div class="artist-photo-placeholder">🎨</div>
-          <h3 class="artist-name">Raul Wesche</h3>
-          <div class="style-tags"><span class="style-tag">Geometric</span><span class="style-tag">Sacred Geometry</span></div>
-          <a href="https://instagram.com/weschetattoo" class="artist-ig" target="_blank">@weschetattoo</a>
-          <a href="https://www.instagram.com/weschetattoo/" class="btn artist-btn" target="_blank">Book Raul</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-main">Tattoo Temple</span>
+                <span>Houston</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#artists" class="nav-link">Artists</a>
+                <a href="#piercing" class="nav-link">Piercing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="artist-card">
-          <div class="artist-photo-placeholder">🎨</div>
-          <h3 class="artist-name">Tatsu</h3>
-          <div class="style-tags"><span class="style-tag">Anime</span><span class="style-tag">Pop Culture</span></div>
-          <a href="https://instagram.com/tatsu.tattoos" class="artist-ig" target="_blank">@tatsu.tattoos</a>
-          <a href="https://www.instagram.com/tatsu.tattoos/" class="btn artist-btn" target="_blank">Book Tatsu</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Tattoo Temple Houston</h1>
+            <p class="hero-subtitle">Premium Tattoo & Piercing Studio</p>
+            <div class="hero-details">
+                <p><i class="fas fa-map-marker-alt"></i> 3346 E TC Jester Blvd, Houston, TX 77018</p>
+                <p><i class="fas fa-clock"></i> Tuesday - Saturday, 1:00 PM - 5:00 PM</p>
+            </div>
+            <div class="hero-cta">
+                <a href="#artists" class="cta-button">Meet Our Artists</a>
+<!-- closing notice removed -->
+            </div>
         </div>
-        <div class="artist-card">
-          <div class="artist-photo-placeholder">🎨</div>
-          <h3 class="artist-name">Allegoryink</h3>
-          <div class="style-tags"><span class="style-tag">Custom Tattoos</span></div>
-          <a href="https://instagram.com/allegoryink" class="artist-ig" target="_blank">@allegoryink</a>
-          <a href="https://www.instagram.com/allegoryink/" class="btn artist-btn" target="_blank">Book Allegoryink</a>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
         </div>
-        <div class="artist-card">
-          <div class="artist-photo-placeholder">🎨</div>
-          <h3 class="artist-name">Masttattoo Official</h3>
-          <div class="style-tags"><span class="style-tag">Custom Tattoos</span></div>
-          <a href="https://instagram.com/masttattoo.official" class="artist-ig" target="_blank">@masttattoo.official</a>
-          <a href="https://www.instagram.com/masttattoo.official/" class="btn artist-btn" target="_blank">Book Masttattoo</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Welcome to Tattoo Temple</h2>
+                <p>Step into Houston's premier tattoo and piercing sanctuary, where artistry meets expertise. Our temple houses four exceptional artists, each bringing their unique vision and years of mastery to create stunning, personalized body art.</p>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <i class="fas fa-palette"></i>
+                        <h3>Diverse Styles</h3>
+                        <p>From sacred geometry to anime art, we cover all your creative needs</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-star"></i>
+                        <h3>Expert Artists</h3>
+                        <p>Years of experience and thousands of satisfied clients</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Safe & Clean</h3>
+                        <p>Highest standards of hygiene and professional equipment</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="artist-card">
-          <div class="artist-photo-placeholder">🎨</div>
-          <h3 class="artist-name">Imek One</h3>
-          <div class="style-tags"><span class="style-tag">Custom Tattoos</span></div>
-          <a href="https://instagram.com/imek_one" class="artist-ig" target="_blank">@imek_one</a>
-          <a href="https://www.instagram.com/imek_one/" class="btn artist-btn" target="_blank">Book Imek</a>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="artists" class="artists">
+        <div class="container">
+            <h2 class="section-title">Our Artists</h2>
+            
+            <!-- Raul Wesche -->
+            <div class="artist">
+                <div class="artist-info">
+                    <div class="artist-details">
+                        <h3>Raul Wesche</h3>
+                        <p class="artist-role">Owner & Geometric Artist</p>
+                        <div class="artist-stats">
+                            <span><i class="fab fa-instagram"></i> 296K followers</span>
+                            <span><i class="fas fa-clock"></i> 12 years experience</span>
+                        </div>
+                        <p class="artist-description">
+                            Master of large-scale geometric tattoos, sacred geometry, mandalas, dotwork, and blackwork. 
+                            Raul transforms skin into sacred art with precision and spiritual intention.
+                        </p>
+                        <div class="artist-specialties">
+                            <span>Sacred Geometry</span>
+                            <span>Mandalas</span>
+                            <span>Dotwork</span>
+                            <span>Blackwork</span>
+                        </div>
+                        <a href="https://instagram.com/weschetattoo" target="_blank" class="instagram-link">
+                            <i class="fab fa-instagram"></i> @weschetattoo
+                        </a>
+                    </div>
+                </div>
+                <div class="artist-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/raul_1.jpg" alt="Raul Wesche geometric tattoo work" loading="lazy">
+                        <img src="images/raul_2.jpg" alt="Raul Wesche sacred geometry tattoo" loading="lazy">
+                        <img src="images/raul_3.jpg" alt="Raul Wesche mandala tattoo" loading="lazy">
+                        <img src="images/raul_4.jpg" alt="Raul Wesche dotwork tattoo" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Madeline B. -->
+            <div class="artist">
+                <div class="artist-info">
+                    <div class="artist-details">
+                        <h3>Madeline B.</h3>
+                        <p class="artist-role">Anime & Kawaii Specialist</p>
+                        <div class="artist-stats">
+                            <span><i class="fab fa-instagram"></i> 5.5K followers</span>
+                            <span><i class="fas fa-heart"></i> LGBTQI+ Friendly</span>
+                        </div>
+                        <p class="artist-description">
+                            Bringing your favorite anime characters and kawaii dreams to life with vibrant colors 
+                            and incredible attention to detail. Creating a welcoming space for all.
+                        </p>
+                        <div class="artist-specialties">
+                            <span>Anime</span>
+                            <span>Kawaii</span>
+                            <span>Color Work</span>
+                            <span>Character Art</span>
+                        </div>
+                        <a href="https://instagram.com/sailor.doom.tattoos" target="_blank" class="instagram-link">
+                            <i class="fab fa-instagram"></i> @sailor.doom.tattoos
+                        </a>
+                    </div>
+                </div>
+                <div class="artist-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/madeline_1.jpg" alt="Madeline anime tattoo work" loading="lazy">
+                        <img src="images/madeline_2.jpg" alt="Madeline kawaii tattoo" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kris -->
+            <div class="artist">
+                <div class="artist-info">
+                    <div class="artist-details">
+                        <h3>Kris (Chloe Kristensen)</h3>
+                        <p class="artist-role">Artist & Art Teacher</p>
+                        <div class="artist-stats">
+                            <span><i class="fab fa-instagram"></i> 11.3K followers</span>
+                            <span><i class="fas fa-graduation-cap"></i> BFA Degree</span>
+                        </div>
+                        <p class="artist-description">
+                            Combining formal art education with tattoo artistry. Kris brings academic precision 
+                            and creative innovation to every piece, whether teaching or tattooing.
+                        </p>
+                        <div class="artist-specialties">
+                            <span>Fine Art</span>
+                            <span>Custom Design</span>
+                            <span>Illustrative</span>
+                            <span>Mixed Media</span>
+                        </div>
+                        <a href="https://instagram.com/krisxmoon" target="_blank" class="instagram-link">
+                            <i class="fab fa-instagram"></i> @krisxmoon
+                        </a>
+                    </div>
+                </div>
+                <div class="artist-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/kris_1.jpg" alt="Kris artistic tattoo work" loading="lazy">
+                        <img src="images/kris_2.jpg" alt="Kris custom design tattoo" loading="lazy">
+                        <img src="images/kris_3.jpg" alt="Kris illustrative tattoo" loading="lazy">
+                        <img src="images/kris_4.jpg" alt="Kris fine art tattoo" loading="lazy">
+                    </div>
+                </div>
+            </div>
         </div>
-  </div>
-</section>
+    </section>
 
-<section id="gallery">
-  <h2 class="section-title">Portfolio</h2>
-  <p class="section-sub">Real work from our team — custom pieces, every style.</p>
-  <div class="gallery-grid">
-<div class="gallery-item"><img src="./img/photo_01.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_01.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_02.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_03.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_04.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_05.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_06.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_07.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_08.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_09.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_10.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-<div class="gallery-item"><img src="./img/photo_11.jpg" alt="Tattoo Temple Houston work" loading="lazy"></div>
-  </div>
-</section>
+    <!-- Piercing Section -->
+    <section id="piercing" class="piercing">
+        <div class="container">
+            <div class="piercing-content">
+                <h2 class="section-title">Professional Body Piercing</h2>
+                
+                <div class="piercing-artist">
+                    <div class="artist-info">
+                        <div class="artist-details">
+                            <h3>Julia Claire (Juju)</h3>
+                            <p class="artist-role">Master Body Piercer</p>
+                            <div class="artist-stats">
+                                <span><i class="fab fa-instagram"></i> 1.2K followers</span>
+                                <span><i class="fas fa-clock"></i> Walk-ins Welcome</span>
+                            </div>
+                            <p class="artist-description">
+                                Expert in all types of body piercing with an extensive collection of premium body jewelry. 
+                                Professional, safe, and welcoming to all clients.
+                            </p>
+                            <div class="piercing-info">
+                                <div class="piercing-hours">
+                                    <h4><i class="fas fa-calendar-alt"></i> Walk-in Hours</h4>
+                                    <p>Friday & Saturday: 12:00 PM - 6:00 PM</p>
+                                </div>
+                                <div class="piercing-services">
+                                    <h4><i class="fas fa-star"></i> Services</h4>
+                                    <ul>
+                                        <li>Ear Piercings</li>
+                                        <li>Facial Piercings</li>
+                                        <li>Body Piercings</li>
+                                        <li>Premium Jewelry</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://instagram.com/juju.brilliart" target="_blank" class="instagram-link">
+                                <i class="fab fa-instagram"></i> @juju.brilliart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="artist-gallery">
+                        <div class="gallery-grid">
+                            <img src="images/juju_1.jpg" alt="Juju piercing work" loading="lazy">
+                            <img src="images/juju_2.jpg" alt="Juju body jewelry" loading="lazy">
+                            <img src="images/juju_3.jpg" alt="Juju ear piercing" loading="lazy">
+                            <img src="images/juju_4.jpg" alt="Juju professional piercing" loading="lazy">
+                            <img src="images/juju_5.jpg" alt="Juju body piercing art" loading="lazy">
+                            <img src="images/juju_6.jpg" alt="Juju jewelry collection" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="info">
-  <h2 class="section-title">Visit Us</h2>
-  <p class="section-sub">Houston, TX — Come in, meet the team, and start planning your piece.</p>
-  <div class="shop-info-grid">
-    <div>
-      <div class="info-block" style="margin-bottom:32px">
-        <h3>Hours</h3>
-        <ul>
-          <li>Monday – Friday: 11am – 8pm</li>
-          <li>Saturday: 10am – 7pm</li>
-          <li>Sunday: 12pm – 6pm</li>
-          <li>Walk-ins welcome during business hours</li>
-        </ul>
-      </div>
-      <div class="info-block">
-        <h3>Contact</h3>
-        <ul>
-          <li>DM us on Instagram: <a href="https://instagram.com/tattootemple_houston" style="color:#c9a84c">@tattootemple_houston</a></li>
-          <li>Free consultations available</li>
-          <li>Houston, TX</li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <div class="map-wrap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221985.4748898844!2d-95.6349956!3d29.8168374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>3346 E TC Jester Blvd<br>Houston, Texas 77018</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Tuesday - Saturday<br>1:00 PM - 5:00 PM</p>
+                            <p class="piercing-hours">Walk-in Piercing:<br>Fri & Sat 12:00 PM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h3>Booking</h3>
+                            <p>Message artists directly via Instagram DM for tattoo consultations and bookings</p>
+                        </div>
+                    </div>
+<!-- closing notice removed -->
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.8844267654145!2d-95.40848968985654!3d29.803721475185765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c737c6d4cc1b%3A0x5c5c5c5c5c5c5c5c!2s3346%20E%20TC%20Jester%20Blvd%2C%20Houston%2C%20TX%2077018!5e0!3m2!1sen!2sus!4v1645123456789!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="cta-section" id="book">
-  <h2>Ready to Get Inked?</h2>
-  <p>Book directly with any of our artists, or send us a message and we'll match you with the right one.</p>
-  <a href="https://www.instagram.com/tattootemple_houston/" class="btn" target="_blank">DM Us on Instagram</a>
-</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Tattoo Temple Houston</h3>
+                    <p>Premium Tattoo & Piercing Studio</p>
+                </div>
+                <div class="footer-links">
+                    <div class="social-links">
+                        <a href="https://instagram.com/weschetattoo" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/sailor.doom.tattoos" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/krisxmoon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/juju.brilliart" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>3346 E TC Jester Blvd, Houston, TX 77018</p>
+                    <p>Tuesday - Saturday, 1:00 PM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tattoo Temple Houston. All rights reserved.</p>
+                <p style="margin-top: 6px; font-size: 0.75rem; opacity: 0.5;"><a href="https://bayouwebstudio.com" target="_blank" style="color: inherit; text-decoration: none;">Powered by BWS</a></p>
+            </div>
+        </div>
+    </footer>
 
-<a href="https://www.instagram.com/tattootemple_houston/" class="float-btn" target="_blank">Book Now</a>
+    <script src="js/script.js"></script>
 
-<footer>
-  <p style="margin-bottom:8px">
-    <a href="https://instagram.com/tattootemple_houston">@tattootemple_houston</a> · Tattoo Temple Houston · Houston, TX
-  </p>
-  <a href="https://bayouwebstudio.com" target="_blank" style="opacity:0.4;font-size:12px;">Powered by Bayou Web Studio</a>
-</footer>
+<a href="https://instagram.com/weschetattoo" target="_blank" class="floating-book-btn">Book Now</a>
+<style>
+.floating-book-btn{position:fixed;bottom:2rem;right:2rem;background:#fff;color:#000;padding:1rem 2rem;font-size:.9rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;z-index:9999;transition:all .3s;box-shadow:0 4px 20px rgba(0,0,0,.3)}
+.floating-book-btn:hover{background:#000;color:#fff;transform:translateY(-2px);box-shadow:0 6px 25px rgba(0,0,0,.4)}
+@media(max-width:768px){.floating-book-btn{bottom:1rem;right:1rem;padding:.8rem 1.5rem;font-size:.8rem}}
+</style>
 </body>
 </html>
