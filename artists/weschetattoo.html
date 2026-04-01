@@ -1,292 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raul Wesche &#x2014; Tattoo Temple Houston</title>
-  <meta name="description" content="I'm Raul Wesche, a geometric tattoo artist based in Houston.">
-  <link rel="canonical" href="https://houstontattootemple.com/artists/weschetattoo.html">
-  <meta property="og:title" content="Raul Wesche &#x2014; Tattoo Temple Houston">
-  <meta property="og:description" content="I'm Raul Wesche, a geometric tattoo artist based in Houston.">
-  <meta property="og:image" content="https://houstontattootemple.com/img/weschetattoo_1.jpg">
-  <meta property="og:url" content="https://houstontattootemple.com/artists/weschetattoo.html">
-  <meta property="og:type" content="profile">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raúl Wesche — Tattoo Temple Houston</title>
+  <meta name="description" content="Raúl Wesche — Geometric · Sacred Geometry tattoo artist at Tattoo Temple Houston, Houston TX." />
+  <link rel="canonical" href="https://eternowebstudio.com/tattootemplehouston/artists/weschetattoo.html" />
+  <meta property="og:title" content="Raúl Wesche — Tattoo Temple Houston" />
+  <meta property="og:description" content="Geometric · Sacred Geometry tattoo artist at Tattoo Temple Houston, Houston TX." />
+  <meta property="og:image" content="https://eternowebstudio.com/tattootemplehouston/img/wesche_2.jpg" />
+  <meta property="og:url" content="https://eternowebstudio.com/tattootemplehouston/artists/weschetattoo.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
-    
-    :root {
-      --black: #0a0a0a;
-      --charcoal: #141414;
-      --gold: #C9A84C;
-      --white: #f5f5f0;
-      --dim: #888;
-      --border: rgba(255,255,255,0.07);
-    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #0a0a0a; --surface: #111111; --surface-2: #161616;
+      --gold: #C9A84C; --gold-light: #e2c47a; --gold-dim: rgba(201,168,76,0.12);
+      --white: #f5f5f0; --dim: #888; --border: rgba(201,168,76,0.1);
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', 'Helvetica Neue', sans-serif;
+    }
     html { scroll-behavior: smooth; }
-    body {
-      background: var(--black);
-      color: var(--white);
-      font-family: 'Inter', sans-serif;
-      font-weight: 300;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
+    body { background: var(--black); color: var(--white); font-family: var(--sans); line-height: 1.7; overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
     nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 20px 48px;
-      background: rgba(10,10,10,0.92);
-      backdrop-filter: blur(12px);
+      padding: 1.4rem 2.5rem;
+      transition: background 0.4s, backdrop-filter 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(10,10,10,0.9); backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
-    .nav-logo {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.3rem; font-weight: 400;
-      letter-spacing: 0.1em; color: var(--white);
-      text-decoration: none;
-    }
-    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
-    .nav-links a {
-      color: var(--dim); text-decoration: none;
-      font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover, .nav-links a.active { color: var(--white); }
-    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
-    .hamburger span { display: block; width: 22px; height: 1px; background: var(--white); margin: 5px 0; transition: all 0.3s; }
-    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px,4px); }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; letter-spacing: 0.04em; color: var(--gold); }
+    .nav-links { display: flex; gap: 2.2rem; }
+    .nav-links a { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); transition: color 0.3s; }
+    .nav-links a:hover { color: var(--white); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); transition: all 0.3s; }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
     .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px,-4px); }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
     .mobile-menu {
-      display: none; position: fixed; top: 65px; left: 0; right: 0; z-index: 99;
-      background: var(--charcoal); padding: 24px 48px;
-      border-bottom: 1px solid var(--border);
+      display: none; position: fixed; inset: 0;
+      background: rgba(10,10,10,0.97); z-index: 190; flex-direction: column;
+      align-items: center; justify-content: center; gap: 2.5rem;
     }
-    .mobile-menu.open { display: block; }
-    .mobile-menu a {
-      display: block; color: var(--white); text-decoration: none;
-      font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 12px 0; border-bottom: 1px solid var(--border);
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--serif); font-size: 2rem; color: var(--white); }
+    .mobile-menu a:hover { color: var(--gold); }
+    @media (max-width: 768px) { .nav-links { display: none; } .hamburger { display: flex; } nav { padding: 1.2rem 1.5rem; } }
+
+    /* Hero */
+    #hero {
+      position: relative; height: 100vh; min-height: 600px;
+      background: url('../img/wesche_2.jpg') center center / cover no-repeat;
+      display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+      padding-bottom: 8rem;
     }
-    .book-float {
-      position: fixed; bottom: 32px; right: 32px; z-index: 200;
-      background: var(--gold); color: #000;
-      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
-      text-decoration: none; padding: 14px 22px; border-radius: 2px;
-      box-shadow: 0 4px 24px rgba(201,168,76,0.35);
-      transition: transform 0.2s, box-shadow 0.2s;
+    #hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.15) 0%, rgba(10,10,10,0.6) 60%, rgba(10,10,10,0.9) 100%); }
+    .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 2rem; }
+    .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .hero-name { font-family: var(--serif); font-size: clamp(3.5rem, 9vw, 7.5rem); font-weight: 300; line-height: 1; letter-spacing: -0.01em; margin-bottom: 0.8rem; }
+    .hero-style { font-family: var(--serif); font-size: clamp(1rem, 2.5vw, 1.5rem); font-style: italic; color: rgba(245,245,240,0.65); }
+
+    section { padding: 6rem 2rem; }
+    .section-inner { max-width: 1000px; margin: 0 auto; }
+    .section-label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .section-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 300; line-height: 1.15; margin-bottom: 1.5rem; }
+    .gold-rule { width: 60px; height: 1px; background: var(--gold); margin: 1.5rem 0; }
+    .gold-rule.center { margin: 1.5rem auto; }
+
+    /* About */
+    #about { background: var(--surface); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 5rem; align-items: start; }
+    .about-text p { color: rgba(245,245,240,0.75); line-height: 1.95; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .style-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+    .style-tag { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.28rem 0.8rem; border: 1px solid var(--border); color: var(--dim); }
+    .ig-link {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.3); padding: 0.65rem 1.4rem; transition: all 0.3s;
     }
-    .book-float:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,168,76,0.5); }
+    .ig-link:hover { background: var(--gold); color: var(--black); }
+    .about-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    .about-imgs img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+    .about-imgs .tall { grid-column: 1 / -1; aspect-ratio: 16/9; }
+    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+    /* Gallery */
+    #gallery { background: var(--black); }
+    .gallery-header { text-align: center; margin-bottom: 3rem; }
+    .gallery-masonry { columns: 3; column-gap: 0.7rem; }
+    .g-item { break-inside: avoid; margin-bottom: 0.7rem; overflow: hidden; }
+    .g-item img { width: 100%; display: block; transition: transform 0.5s ease; }
+    .g-item:hover img { transform: scale(1.04); }
+    @media (max-width: 768px) { .gallery-masonry { columns: 2; } }
+    @media (max-width: 480px) { .gallery-masonry { columns: 1; } }
+
+    /* Booking */
+    #booking { background: var(--surface); }
+    .booking-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+    .booking-inner p { color: rgba(245,245,240,0.7); margin-bottom: 2rem; font-size: 0.95rem; line-height: 1.9; }
+    .book-btn {
+      display: inline-block; padding: 1rem 3rem;
+      background: var(--gold); color: var(--black);
+      font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;
+      transition: all 0.3s; margin-bottom: 1.5rem;
+    }
+    .book-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .alt-book { font-size: 0.75rem; color: var(--dim); }
+    .alt-book a { color: var(--gold); }
+    .alt-book a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer { background: var(--black); border-top: 1px solid var(--border); padding: 3rem 2rem; }
+    .footer-inner { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+    .footer-logo { font-family: var(--serif); font-size: 1.3rem; color: var(--gold); }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); transition: color 0.3s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 0.7rem; color: var(--dim); width: 100%; text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--border); margin-top: 1.5rem; }
+
+    .float-btn {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 300;
+      background: var(--gold); color: var(--black);
+      font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;
+      padding: 0.85rem 1.6rem; box-shadow: 0 4px 20px rgba(201,168,76,0.35); transition: all 0.3s;
+    }
+    .float-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+
     .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
-    footer {
-      background: var(--charcoal); padding: 48px 72px;
-      border-top: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 24px;
-    }
-    .footer-logo { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.1rem; color: var(--dim); }
-    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
-    .footer-links a { color: var(--dim); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
-    .footer-links a:hover { color: var(--white); }
-    .footer-copy { color: var(--dim); font-size: 0.72rem; }
-    .section-label { font-size: 0.68rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
-    h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; }
-    .btn-gold { display: inline-block; background: var(--gold); color: #000; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 40px; transition: opacity 0.2s; }
-    .btn-gold:hover { opacity: 0.88; }
-    .btn-outline { display: inline-block; border: 1px solid var(--border); color: var(--white); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 14px 36px; transition: border-color 0.2s, color 0.2s; }
-    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-    @media (max-width: 900px) {
-      nav { padding: 18px 24px; }
-      .nav-links { display: none; }
-      .hamburger { display: block; }
-      footer { padding: 40px 24px; flex-direction: column; text-align: center; }
-    }
-    @media (max-width: 600px) { footer { padding: 32px 20px; } }
-  
-    .hero {
-      min-height: 80vh; display: flex; align-items: flex-end;
-      padding: 0 72px 80px; position: relative; overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute; inset: 0;
-      background-image: url('../img/weschetattoo_1.jpg');
-      background-size: cover; background-position: center top;
-      filter: brightness(0.38); transform: scale(1.02);
-    }
-    .hero-gradient { position: absolute; inset: 0; background: linear-gradient(to top, rgba(5,5,5,0.98) 0%, rgba(5,5,5,0.1) 60%, transparent 100%); }
-    .hero-content { position: relative; z-index: 2; max-width: 700px; }
-    .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; }
-    h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 300; line-height: 1; margin-bottom: 20px; }
-    .hero-handle { font-size: 0.82rem; color: var(--dim); letter-spacing: 0.08em; margin-bottom: 32px; }
-    .hero-handle a { color: var(--dim); text-decoration: none; transition: color 0.2s; }
-    .hero-handle a:hover { color: #C9A84C; }
-    /* BIO */
-    .bio-section { padding: 96px 72px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: start; }
-    .bio-text p { color: var(--dim); line-height: 1.9; margin-bottom: 24px; font-size: 0.97rem; }
-    .bio-stats { position: sticky; top: 100px; }
-    .stat-card { border: 1px solid var(--border); padding: 28px; margin-bottom: 16px; text-align: center; }
-    .stat-big { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.4rem; font-weight: 300; color: #C9A84C; }
-    .stat-small { font-size: 0.72rem; color: var(--dim); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 8px; }
-    .style-tag { display: inline-block; border: 1px solid #C9A84C44; color: #C9A84C; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 16px; margin: 4px; }
-    /* GALLERY */
-    .gallery-section { padding: 72px 48px; }
-    .masonry-grid { columns: 4; column-gap: 3px; max-width: 1400px; margin: 0 auto; }
-    .masonry-item { break-inside: avoid; margin-bottom: 3px; overflow: hidden; }
-    .masonry-item img { width: 100%; display: block; filter: brightness(0.85); transition: filter 0.3s; }
-    .masonry-item:hover img { filter: brightness(1); }
-    /* BOOKING CTA */
-    .booking-cta { padding: 80px 72px; background: var(--charcoal); text-align: center; }
-    .booking-cta h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.4rem; font-weight: 300; margin-bottom: 16px; }
-    .booking-cta p { color: var(--dim); max-width: 440px; margin: 0 auto 32px; }
-    @media (max-width: 900px) {
-      .hero { padding: 0 24px 60px; }
-      .bio-section { padding: 60px 24px; grid-template-columns: 1fr; gap: 40px; }
-      .bio-stats { position: static; }
-      .gallery-section { padding: 48px 16px; }
-      .masonry-grid { columns: 2; }
-      .booking-cta { padding: 60px 24px; }
-    }
-    @media (max-width: 480px) { .masonry-grid { columns: 1; } }
+    .fade-up.delay-1 { transition-delay: 0.1s; }
+    .fade-up.delay-2 { transition-delay: 0.2s; }
+    .fade-up.delay-3 { transition-delay: 0.3s; }
   </style>
 </head>
 <body>
-  
-  <nav>
-    <a href="../index.html" class="nav-logo">Tattoo Temple Houston</a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../artists/index.html">Our Artists</a></li>
-      <li><a href="../gallery.html">Gallery</a></li>
-      <li><a href="../reviews.html">Reviews</a></li>
-      <li><a href="../booking.html">Book Now</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.querySelector('.mobile-menu').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-  <div class="mobile-menu">
-    <a href="../index.html">Home</a>
-    <a href="../artists/index.html">Our Artists</a>
-    <a href="../gallery.html">Gallery</a>
-    <a href="../reviews.html">Reviews</a>
-    <a href="../booking.html">Book Now</a>
+
+<nav id="main-nav">
+  <a class="nav-logo" href="../">Tattoo Temple Houston</a>
+  <div class="nav-links">
+    <a href="./">Our Artists</a>
+    <a href="../#gallery">Gallery</a>
+    <a href="./booking.html">Book</a>
+    <a href="../#contact">Contact</a>
   </div>
-  <a href="../booking.html" class="book-float">Book Now</a>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
 
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-gradient"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow fade-up">geometric &#xb7; Tattoo Artist</p>
-      <h1 class="fade-up">Raul Wesche</h1>
-      <p class="hero-handle fade-up"><a href="https://www.instagram.com/weschetattoo" target="_blank" rel="noopener">@weschetattoo</a></p>
-      <a href="../booking.html" class="btn-gold fade-up">Book with Raul</a>
-    </div>
-  </section>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../">Home</a>
+  <a href="./" onclick="closeMobile()">Our Artists</a>
+  <a href="#booking" onclick="closeMobile()">Book</a>
+  <a href="../#contact" onclick="closeMobile()">Contact</a>
+</div>
 
-  <div class="bio-section">
-    <div class="bio-text">
-      <p class="fade-up">I'm Raul Wesche, a geometric tattoo artist based in Houston.</p>
-      <div style="margin-top:32px;" class="fade-up">
-        <span class="style-tag">geometric</span>
-        
-        <span class="style-tag">Custom Work</span>
-      </div>
-    </div>
-    <div class="bio-stats">
-      
-      <div class="stat-card fade-up">
-        <div class="stat-big">geometric</div>
-        <div class="stat-small">Primary Style</div>
-      </div>
-      <div class="stat-card fade-up">
-        <a href="../booking.html" style="display:block;text-align:center;text-decoration:none;">
-          <div class="stat-big" style="font-size:1rem;">&#x1f4c5;</div>
-          <div class="stat-small" style="color:#C9A84C;margin-top:8px;">Book Now</div>
+<section id="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Tattoo Temple Houston</p>
+    <h1 class="hero-name">Raúl Wesche</h1>
+    <p class="hero-style">Geometric · Sacred Geometry</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <p class="section-label">The Artist</p>
+        <h2 class="section-title">Raúl Wesche</h2>
+        <div class="gold-rule"></div>
+        <div class="style-tags"><span class="style-tag">Geometric</span> <span class="style-tag">Sacred Geometry</span> <span class="style-tag">Dot-Work</span> <span class="style-tag">Mandalas</span></div>
+        <p>Raúl Wesche is the founder of Tattoo Temple Houston and one of the most recognized geometric tattoo artists in the United States. With over twelve years of dedicated practice, Raúl has built a singular body of work rooted in the mathematics of the universe — sacred geometry, mandalas, Flower of Life compositions, and large-scale dot-work pieces that transcend the conventional boundaries of tattooing. His work is precision-first, yet unmistakably human: each design calibrated to the unique topography of the body it inhabits.</p>
+        <p>Based in Houston, Texas, Raúl works primarily on full and partial sleeves, back pieces, and large-scale projects that demand months of collaborative planning. He is deeply invested in the consultation process, treating each client relationship as a creative partnership. His rate reflects the caliber of his craft, and his booking calendar is typically reserved months in advance. If you are drawn to the language of geometry — to symmetry, to sacred forms, to the idea that the body can carry something timeless — Raúl is the artist you are looking for.</p>
+        <a href="https://www.instagram.com/weschetattoo/" target="_blank" rel="noopener" class="ig-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @weschetattoo
         </a>
       </div>
+      <div class="fade-up delay-2">
+        <div class="about-imgs">
+          <img src="../img/wesche_1.jpg" alt="Raúl Wesche tattoo work" loading="lazy" class="tall" />
+          <img src="../img/wesche_2.jpg" alt="Raúl Wesche tattoo work" loading="lazy" />
+          <img src="../img/wesche_3.jpg" alt="Raúl Wesche tattoo work" loading="lazy" />
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <section class="gallery-section">
-    <div style="max-width:1400px;margin:0 auto 32px 48px;">
-      <p class="section-label fade-up">Portfolio</p>
-      <h2 class="fade-up" style="font-family:'Cormorant Garamond',Georgia,serif;">Work by Raul</h2>
+<section id="gallery">
+  <div class="section-inner">
+    <div class="gallery-header fade-up">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Selected Work</h2>
+      <div class="gold-rule center"></div>
     </div>
-    <div class="masonry-grid">
-      
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_1.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_2.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_3.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_4.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_5.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_6.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_7.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_8.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_9.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
-
-      <div class="masonry-item fade-up">
-        <img src="../img/weschetattoo_10.jpg" alt="Raul Wesche tattoo" loading="lazy">
-      </div>
+    <div class="gallery-masonry">
+      <div class="g-item fade-up"><img src="../img/wesche_4.jpg" alt="Tattoo work" loading="lazy" /></div>
+      <div class="g-item fade-up delay-1"><img src="../img/wesche_5.jpg" alt="Tattoo work" loading="lazy" /></div>
+      <div class="g-item fade-up delay-2"><img src="../img/wesche_6.jpg" alt="Tattoo work" loading="lazy" /></div>
+      <div class="g-item fade-up delay-3"><img src="../img/wesche_7.jpg" alt="Tattoo work" loading="lazy" /></div>
+      <div class="g-item fade-up delay-1"><img src="../img/wesche_8.jpg" alt="Tattoo work" loading="lazy" /></div>
+      <div class="g-item fade-up delay-2"><img src="../img/wesche_9.jpg" alt="Tattoo work" loading="lazy" /></div>
+      <div class="g-item fade-up delay-3"><img src="../img/wesche_10.jpg" alt="Tattoo work" loading="lazy" /></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="booking-cta">
-    <p class="section-label fade-up">Book a Session</p>
-    <h2 class="fade-up">Ready to Work with Raul?</h2>
-    <p class="fade-up">Fill out the booking form and we'll be in touch to schedule your consultation.</p>
-    <a href="../booking.html" class="btn-gold fade-up">Start Your Booking</a>
-  </section>
+<section id="booking">
+  <div class="section-inner">
+    <div class="booking-inner fade-up">
+      <p class="section-label">Book a Consultation</p>
+      <h2 class="section-title">Work with Raúl</h2>
+      <div class="gold-rule center"></div>
+      <p>Raúl works on a selective booking basis. Large-scale and multi-session projects preferred. Reach out via Instagram DM to begin the consultation process.</p>
+      <a href="https://www.instagram.com/weschetattoo/" target="_blank" rel="noopener" class="book-btn">Book via Instagram</a>
+      <p class="alt-book">Questions? DM <a href="https://www.instagram.com/weschetattoo/" target="_blank" rel="noopener">@weschetattoo</a> directly on Instagram.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <div class="footer-logo">Tattoo Temple Houston</div>
+<footer>
+  <div class="footer-inner">
+    <a class="footer-logo" href="../">Tattoo Temple Houston</a>
     <div class="footer-links">
-      <a href="../index.html">Home</a>
-      <a href="../artists/index.html">Artists</a>
-      <a href="../gallery.html">Gallery</a>
-      <a href="../reviews.html">Reviews</a>
-      <a href="../booking.html">Book Now</a>
+      <a href="./">Our Artists</a>
+      <a href="../#gallery">Gallery</a>
+      <a href="https://www.instagram.com/tattootemple_houston/" target="_blank" rel="noopener">Instagram</a>
     </div>
-    <div class="footer-copy">&#xa9; 2026 Tattoo Temple Houston</div>
-  </footer>
-  
-  <script>
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-    }, { threshold: 0.12 });
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
-    });
-  </script>
+  </div>
+  <p class="footer-copy">Tattoo Temple Houston &nbsp;·&nbsp; Houston, TX &nbsp;·&nbsp; &copy; 2025</p>
+</footer>
+
+<a href="#booking" class="float-btn">Book Now</a>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); });
+  const ham = document.getElementById('hamburger');
+  const mob = document.getElementById('mobile-menu');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open'); mob.classList.toggle('open');
+    document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+  });
+  function closeMobile() {
+    ham.classList.remove('open'); mob.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+</script>
 </body>
 </html>
